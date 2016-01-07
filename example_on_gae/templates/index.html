@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>google_recaptcha_lite - Example</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- For Google CAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Demonstrating the use of google_recaptcha_lite library</h1>
+
+    <p>See <a href="https://github.com/steven-chau/google_recaptcha_lite">google_recaptcha_lite</a> on GitHub for details.
+    </p>
+
+    <br />
+
+    <div class="well well-xs">
+      <form method="post" action="process-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Your name here" maxlength="40">
+        </div>
+        <div class="form-group">
+          <div class="g-recaptcha" data-sitekey="YOUR SITEKEY GOES HERE"></div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-md btn-primary">Process Form</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
