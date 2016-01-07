@@ -1,5 +1,9 @@
 # Demonstrating how to use google_recaptcha_lite
 
+## To see this example in action
+http://goog-recaptcha-lite.appspot.com/
+
+
 ## Prerequisite
 You need to have App Engine SDK for Python installed on your machine. See https://cloud.google.com/appengine/docs/python/ for details.
 
