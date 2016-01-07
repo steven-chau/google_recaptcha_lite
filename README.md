@@ -13,8 +13,9 @@ https://github.com/sirjhep/gRecaptcha4py
 ## Usage
 1. Copy the file `google_recaptcha_lite.py` to your project.
 2. In your Python script that handles the verification of reCAPTCHA, do this:
-  a.  Import this module: `from google_recaptcha_lite import GoogleRecaptchaLite`
-  b.  Include something like this: ```
+  1. Import this module: `from google_recaptcha_lite import GoogleRecaptchaLite`
+  2. Include something like this: 
+  ```
     userResp = request.form.get('g-recaptcha-response')
     captchalite = GoogleRecaptchaLite(GOOGLE_RECAPTCHA_SECRET)
     apiJson = captchalite.verify(userResp)
